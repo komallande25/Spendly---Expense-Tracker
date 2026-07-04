@@ -22,10 +22,13 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/terms")
+def terms():
+    return render_template("terms.html")
+
 # ------------------------------------------------------------------ #
 # Placeholder routes — students will implement these                  #
-# ------------------------------------------------------------------ #
-
+# ... existing code ...
 @app.route("/logout")
 def logout():
     return "Logout — coming in Step 3"
