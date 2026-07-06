@@ -2,7 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
 # ------------------------------------------------------------------ #
 # Routes                                                              #
 # ------------------------------------------------------------------ #
@@ -11,16 +10,13 @@ app = Flask(__name__)
 def landing():
     return render_template("landing.html")
 
-
 @app.route("/register")
 def register():
     return render_template("register.html")
 
-
 @app.route("/login")
 def login():
     return render_template("login.html")
-
 
 @app.route("/terms")
 def terms():
@@ -32,5 +28,10 @@ def privacy():
 
 # ------------------------------------------------------------------ #
 # Placeholder routes — students will implement these                  #
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=5001)
+
+
+ 
+
